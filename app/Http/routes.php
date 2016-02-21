@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::any('/test', 'testController@test');
 
+Route::any('/form', 'formController@form');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
