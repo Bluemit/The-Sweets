@@ -6,6 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\Input;
 
 
 class testController extends BaseController
@@ -14,6 +15,6 @@ class testController extends BaseController
 
     public function test()
     {
-        return view('form');
+        return Input::get('age');
     }
 }
